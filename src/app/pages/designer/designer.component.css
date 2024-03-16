@@ -1,0 +1,44 @@
+
+.btn-import {
+    /* Styles communs pour tous les boutons */
+    border-radius: 10px;
+    border: 2px solid #e9e9e9;
+    background-color: hsl(80, 11%, 5%)1% 16% ; /* Remplacez YourColorHere par la couleur souhaitée */
+    color: hsl(80, 18%, 93%)1% 16%; /* Couleur du texte */
+    padding: 5px 10px; /* Ajustez selon vos besoins */
+    cursor: pointer; /* Ajoute un pointeur au survol pour indiquer que c'est cliquable */
+}
+
+.custom-file-upload {
+    /* Styles communs pour le conteneur du champ de fichier */
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #e9e9e9;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.custom-file-upload {
+    /* Styles communs pour le conteneur du champ de fichier */
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #e9e9e9;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.file-input {
+    /* Styles spécifiques pour le champ de fichier */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+

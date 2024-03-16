@@ -1,0 +1,45 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <label for="fileInput">
+    <input type="file" id="fileInput" (change)="onFileSelected($event)">
+  </label>
+
+  <!-- Bouton d'importation -->
+  <button (click)="onFileSelected($event)" class= "btn btn-primary" style="border-radius:10px; border: 2px solid #e9e9e9;">Importer le diagramme</button>
+
+  <!-- Bouton de téléchargement -->
+  <button (click)="onDownloadClick()" style="border-radius: 10px; border: 2px solid #e9e9e9;">
+    <i class="bi bi-arrow-down"></i>
+  </button>
+
+
+  <!-- Bouton "Save" -->
+  <button *ngIf="!isUpdate" class="btn btn-transparent" style="border-radius:10px; border: 2px solid #e9e9e9;" (click)="onSaveClick()"> Save BPMN </button>
+
+  <!-- Bouton "Update" -->
+  <button *ngIf="isUpdate" class="btn btn-transparent text-black-50" style="border-radius:10px; border: 2px solid #e9e9e9;" (click)="onUpdateClick()"> Update BPMN </button>
+
+  <div class="container-fluid">
+    <!-- Boutons de contrôle -->
+    <div class="modeler-container">
+      <!-- Votre contenu existant ici -->
+
+      <!-- Déplacer la carte ici -->
+      <div class="card bg-light border-0 p-3">
+        <div class="global-container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="canvas-container">
+                <div id="canvas" #canvas style="border-radius: 5px; width: 100%; height: 600px;"></div>
+                <div class="properties-panel" id="properties">
+                  <!-- Contenu de votre panneau des propriétés ici -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
